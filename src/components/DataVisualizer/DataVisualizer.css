@@ -1,0 +1,23 @@
+.data-visualizer-wrapper .data-visualizer-back-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.data-visualizer-wrapper .data-visualizer-back-wrapper button {
+    width: 87.14px;
+    height: 21px;
+}
+
+.data-visualizer-wrapper .data-visualizer {
+    background-color: orange;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.data-visualizer-wrapper .data-visualizer th,
+.data-visualizer-wrapper .data-visualizer td {
+    width: 200px;
+    text-align: center;
+}

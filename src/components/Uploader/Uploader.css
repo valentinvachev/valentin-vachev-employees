@@ -1,0 +1,21 @@
+.uploader-wrapper .uploader-empty-state-text {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.uploader-wrapper .uploader-empty-state-text.error-text {
+    color: orange;
+}
+
+.uploader-wrapper .uploader-input-wrapper {
+    background-color: orange;
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
