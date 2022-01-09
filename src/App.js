@@ -1,5 +1,5 @@
 import Uploader from './components/Uploader';
-import DataVisualizer from './components/DataVisualizer/DataVisualizer';
+import DataVisualizer from './components/DataVisualizer';
 import { useState } from 'react';
 import './App.css';
 

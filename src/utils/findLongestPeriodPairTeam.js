@@ -4,7 +4,7 @@ const findLongestPeriodPairTeam = (text) => {
     // const todayTime = today.getTime();
 
     const employeesWorkingInfo = constructEmployeeArrayByText(text, today);
-    employeesWorkingInfo.sort((emp1, emp2) => emp1.id - emp2.id);
+    employeesWorkingInfo.sort((emp1, emp2) => Number(emp1.id) - Number(emp2.id));
 
     const totalHoursWorkedTogether = {};
     const employeesWorkingHoursByProjects = {};

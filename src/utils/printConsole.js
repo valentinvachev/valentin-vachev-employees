@@ -1,4 +1,4 @@
-const consolePrinter = (data) => {
+const printConsole = (data) => {
     console.log(
         `${whiteSpaceAndLineCreator(
             'Employee ID #1'
@@ -30,4 +30,4 @@ const whiteSpaceCreator = (word) => {
     return word + ' '.repeat(18 - word.length);
 };
 
-export default consolePrinter;
+export default printConsole;

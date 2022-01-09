@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
-import consolePrinter from '../../utils/consolePrinter';
+import printConsole from '../../utils/printConsole';
 import './DataVisualizer.css';
 
 const DataVisualizer = ({ data, goBack }) => {
     useEffect(() => {
-        consolePrinter(data);
+        printConsole(data);
     }, [data]);
 
     return (
