@@ -1,10 +1,11 @@
 const findLongestPeriodPairTeam = (text) => {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    // const todayTime = today.getTime();
 
     const employeesWorkingInfo = constructEmployeeArrayByText(text, today);
-    employeesWorkingInfo.sort((emp1, emp2) => Number(emp1.id) - Number(emp2.id));
+    employeesWorkingInfo.sort(
+        (emp1, emp2) => Number(emp1.id) - Number(emp2.id)
+    );
 
     const totalHoursWorkedTogether = {};
     const employeesWorkingHoursByProjects = {};
@@ -45,8 +46,6 @@ const findLongestPeriodPairTeam = (text) => {
             if (
                 baseElId !== comparedElId &&
                 baseElProjectId === comparedElProjectId &&
-                // (comparedElDateToTime !== todayTime ||
-                //     baseElDateToTime !== todayTime) &&
                 baseElDateFromTime <= comparedElDateToTime &&
                 baseElDateToTime >= comparedElDateFromTime
             ) {
